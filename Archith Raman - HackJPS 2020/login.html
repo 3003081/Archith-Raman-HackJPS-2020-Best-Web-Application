@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All About Me Hackathon Webpage</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<script> alert ('YOU ARE REQUIRED TO ENTER THE USERNAME AND PASSWORD IN ORDER TO GET ACCESS TO MY WEBSITE.') </script>
+<div class="login">
+<img src="person.jpg" class="person">
+<h1>Login</h1>
+
+<form name="loginform" onsubmit="return validateForm()"; action="home.html" method="post">
+
+	<p>Username</p>
+	<input type="text" name="usr" placeholder="Enter Username">
+	<p>Password</p>
+	<input type="password" name="pword" placeholder="Enter Password">
+	<input type="submit" value="Unlock Access To Website">
+
+</form>
+
+<script>
+    function validateForm() {
+        var un = document.loginform.usr.value;
+        var pw = document.loginform.pword.value;
+        var username = "Archith"; 
+        var password = "abc123";
+        if ((un == username) && (pw == password)) {
+            return true;
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+            return false;
+        }
+  }
+</script>
+
+</div>
+
+</body> 
+</html>
+

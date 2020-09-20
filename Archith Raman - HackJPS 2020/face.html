@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Archith Raman Hackathon Webpage</title>
+	<meta name="sizing" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styling4.css">
+</head>
+<body>
+<div class="archith">
+<div class="navigationbar">
+<div class="logo">
+	<img src="logo.png">
+</div>
+
+<div class="links">
+
+<ul>
+	<a href = "home.html"><li>HOME</li></a>
+	<a href = "about.html"><li>ABOUT ME</li></a>
+	<a href = "hobbies.html"><li>MY INTRESTS/HOBBIES</li></a>
+	<a href = "face.html"><li>WEBCAM PAGE</li></a>
+
+</ul>
+
+	<a href="https://www.youtube.com/channel/UCuHsyGGYrUMD_JvnXT_EquQ"><button type="button" class="something"> MY YOUTUBE CHANNEL </button></a>
+
+</div>
+
+<div class="vid">
+	<video autoplay="true" id="videoElement">
+	<script>
+	var video = document.querySelector("#videoElement");
+
+	if (navigator.mediaDevices.getUserMedia) {
+	  navigator.mediaDevices.getUserMedia({ video: true })
+	    .then(function (stream) {
+	      video.srcObject = stream;
+	    })
+	    .catch(function (err0r) {
+	      console.log("Something went wrong!");
+	    });
+	}
+	</script>
+
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+		
+</div>
+</body>
+</html>
+
+
